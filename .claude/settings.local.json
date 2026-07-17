@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import sys; print\\(sys.executable\\)\")",
+      "Bash(python -c ' *)",
+      "Bash(python demo_mecanismo.py)",
+      "Bash(python metricas.py)",
+      "Bash(python -m py_compile app.py cli.py deteccion.py diagnostico.py motor.py backends.py metricas.py pruebas.py __init__.py)",
+      "Bash(python test_tiler.py)",
+      "Read(//c/Users/ING_LICITACIONES/Desktop/WORKSPACE/Desarrollo/**)",
+      "Bash(python -m restaurador.pruebas fotos_limpias/ --backends lama --guardar salida_pruebas/)",
+      "Bash(python -m restaurador.pruebas fotos_limpias/ --backends lama)",
+      "Bash(mkdir -p salida_pruebas)",
+      "Bash(python \"C:/Users/ING_LI~1/AppData/Local/Temp/claude/C--Users-ING-LICITACIONES-Desktop-WORKSPACE-Desarrollo-restaurador/c45443b1-fa9e-4697-9729-cea55cc0d839/scratchpad/valida_sd.py\")",
+      "Bash(echo \"EXIT=$?\")",
+      "Bash(python -m py_compile *.py)",
+      "Bash(python -m py_compile backends.py)",
+      "Bash(python -m restaurador.pruebas fotos_limpias/ --backends lama,sd_inpaint,lama_sd_refine --preset rapido --semilla 0 --guardar salida_pruebas/)",
+      "Bash(python \"C:/Users/ING_LI~1/AppData/Local/Temp/claude/C--Users-ING-LICITACIONES-Desktop-WORKSPACE-Desarrollo-restaurador/c45443b1-fa9e-4697-9729-cea55cc0d839/scratchpad/montaje.py\")",
+      "Bash(python -m py_compile app.py)",
+      "Bash(python -m restaurador.cli prueba_txt/foto.png --auto --solo-mascara --sensibilidad alta -o prueba_txt/)",
+      "Bash(rm -rf prueba_txt __pycache__)"
+    ]
+  }
+}

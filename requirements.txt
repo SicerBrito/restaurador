@@ -1,0 +1,21 @@
+# Versiones verificadas y funcionando juntas.
+numpy>=1.26,<2.0
+opencv-contrib-python>=4.9,<4.12   # 'contrib' es obligatorio: trae FSR (xphoto)
+Pillow>=10.0
+torch>=2.0
+torchvision>=0.15
+fire>=0.5
+easyocr>=1.7                        # detección automática de texto (opcional)
+
+# simple-lama-inpainting declara Pillow<10, pero es un pin viejo e innecesario:
+# funciona bien con Pillow 12 (verificado). Por eso se instala aparte con --no-deps:
+#     pip install --no-deps simple-lama-inpainting==0.1.2
+
+# --- OPCIONAL: backends de textura por difusión (ver backends.py) ----------
+# Solo si querés usar --backend sd_inpaint / lama_sd_refine. Muestrean textura
+# real en vez de promediar (más nítido), pero son LENTOS en CPU (minutos/imagen).
+# En una máquina sin GPU útil, dejá el backend por defecto "lama".
+#     pip install diffusers>=0.27 transformers>=4.38 accelerate>=0.27
+
+# --- OPCIONAL: métrica perceptual para el arnés de pruebas (metricas.py) ----
+#     pip install lpips>=0.1.4
