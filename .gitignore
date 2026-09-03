@@ -1,0 +1,28 @@
+# Artefactos compilados de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+ENV/
+
+# Empaquetado
+build/
+dist/
+*.egg-info/
+
+# Configuración local y secretos
+.env
+.env.local
+
+# Cachés de herramientas
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Sistema operativo
+Thumbs.db
+.DS_Store
